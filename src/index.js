@@ -14,7 +14,9 @@ ReactDOM.render(
       <Routes>
         <Route path="/" exact element={<App />}></Route>
         <Route path="home" exact element={<Home />}>
+          <Route index exact element={<About />} />
           <Route path="about" exact element={<About />} />
+
           <Route path="portfolio" exact element={<Portfolio />} />
           <Route path="contact" exact element={<Contact />} />
         </Route>

@@ -20,17 +20,27 @@ function Home() {
     setAnchorEl(null);
   };
   return (
-    <div>
+    <div className="body">
       <header className="header">
-        <ul>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>PORTFOLIO</li>
-          <li>CONTACT</li>
-        </ul>
         <Link className="link" to="/">
           <img src="/image/icon.png" alt="" />
         </Link>
+        <ul>
+          <Link className="link" to="/">
+            <li>HOME</li>
+          </Link>
+          <Link className="link" to="about">
+            <li>ABOUT</li>
+          </Link>
+          <Link className="link" to="portfolio">
+            {" "}
+            <li>PORTFOLIO</li>
+          </Link>
+          <Link className="link" to="contact">
+            <li>CONTACT</li>
+          </Link>
+        </ul>
+
         <div className="menu">
           <div className="menu-icon">
             {/* <GrMenu /> */}
