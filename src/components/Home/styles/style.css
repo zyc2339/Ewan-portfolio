@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #1b242f;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 99;
+}
+
+.header img {
+  height: 3rem;
+}
+
+.header .menu-icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.header ul {
+  display: none;
+}
+
+.header .menu {
+  margin-right: 1rem;
+}
+
+.portfolio {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.portfolio hr {
+  border: black solid 2px;
+  margin: 0.5rem 9rem 0;
+}
+
+.box {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .card {
+  position: relative;
+  width: 345px;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.box .card:hover .mask {
+  top: 0;
+  -webkit-animation: dropdown 1s;
+          animation: dropdown 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.box .card:hover .mask {
+  position: absolute;
+  top: -15rem;
+  left: 0;
+  width: 345px;
+  height: 15rem;
+  padding: 1rem;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 0.5fr 2fr 0.7fr;
+      grid-template-rows: 1fr 0.5fr 2fr 0.7fr;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.box .card:hover .mask .technology {
+  color: #e31b6d;
+}
+
+.box .card:hover .mask .btn {
+  margin: 1px 100px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 1px solid #e31b6d;
+}
+
+.box .card:hover .mask .description-with-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.box .card:hover .mask .description-with-btn .btn1 {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.box .card .img {
+  max-width: 345px;
+  max-height: 15rem;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #1b242f;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer .footer-icons {
+  width: 50%;
+  margin: 0 auto;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+.footer .footer-icons a {
+  color: #9b9b9b;
+}
+
+.footer p {
+  color: #777777;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  .header ul {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@-webkit-keyframes dropdown {
+  0% {
+    top: -15rem;
+  }
+  5% {
+    top: 0;
+  }
+  10% {
+    top: -1rem;
+  }
+  20% {
+    top: 0;
+  }
+  30% {
+    top: -0.8rem;
+  }
+  40% {
+    top: 0;
+  }
+  50% {
+    top: -0.6rem;
+  }
+  60% {
+    top: 0;
+  }
+  70% {
+    top: -0.4rem;
+  }
+  80% {
+    top: 0;
+  }
+  90% {
+    top: -0.2rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    top: -15rem;
+  }
+  5% {
+    top: 0;
+  }
+  10% {
+    top: -1rem;
+  }
+  20% {
+    top: 0;
+  }
+  30% {
+    top: -0.8rem;
+  }
+  40% {
+    top: 0;
+  }
+  50% {
+    top: -0.6rem;
+  }
+  60% {
+    top: 0;
+  }
+  70% {
+    top: -0.4rem;
+  }
+  80% {
+    top: 0;
+  }
+  90% {
+    top: -0.2rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
