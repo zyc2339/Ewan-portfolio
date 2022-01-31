@@ -2,13 +2,9 @@ import "./styles/style.css";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-import IconButton from "@mui/material/IconButton";
-import Avatar from "@mui/material/Avatar";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { FiMenu } from "react-icons/fi";
-
-import { GrMenu } from "react-icons/gr";
 
 function Home() {
   const [anchorEl, setAnchorEl] = useState(null);

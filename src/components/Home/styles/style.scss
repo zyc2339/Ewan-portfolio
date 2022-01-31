@@ -222,6 +222,10 @@ a {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      .image-box {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     h3 {
@@ -247,7 +251,7 @@ a {
     }
   }
   .box {
-    margin-top: 5rem;
+    margin-top: 2rem;
     .card {
       width: 690px;
       height: 25rem;
@@ -257,7 +261,7 @@ a {
         top: -25rem;
         width: 690px;
         height: 25rem;
-        padding: 2rem;
+        padding: 1rem;
         font-size: 1.5rem;
       }
       .img {

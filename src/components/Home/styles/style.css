@@ -283,6 +283,15 @@ a {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .about .image .image-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .about h3 {
     font-size: 2.5rem;
   }
@@ -302,7 +311,7 @@ a {
     margin: 0.5rem 19rem 0;
   }
   .box {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .box .card {
     width: 690px;
@@ -313,7 +322,7 @@ a {
     top: -25rem;
     width: 690px;
     height: 25rem;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.5rem;
   }
   .box .card .img {
