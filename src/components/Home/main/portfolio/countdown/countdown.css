@@ -1,0 +1,79 @@
+.countdown {
+  text-align: center;
+  margin-top: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  margin: a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #051817, #0e3839);
+  height: 150px;
+  width: 280px;
+  color: #06f1f6;
+  text-shadow: 1px 1px 7px;
+  border-radius: 15px;
+  border: 2px solid silver;
+  box-shadow: 0 0 5px 15px;
+}
+
+.clock section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.clock section p {
+  font-size: 2rem;
+}
+.clock section small {
+  color: silver;
+  text-shadow: none;
+}
+
+@media only screen and (min-width: 48rem) {
+  .countdown {
+    margin-top: 4rem;
+  }
+
+  .clock {
+    height: 280px;
+    width: 560px;
+    box-shadow: 0 0 5px 25px;
+  }
+
+  .clock section {
+    padding: 2rem;
+  }
+
+  .clock section p {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .countdown {
+    margin-top: 4rem;
+  }
+
+  .clock {
+    height: 180px;
+    width: 360px;
+    box-shadow: 0 0 5px 25px;
+  }
+
+  .clock section {
+    padding: 1rem;
+  }
+
+  .clock section p {
+    font-size: 3rem;
+  }
+}

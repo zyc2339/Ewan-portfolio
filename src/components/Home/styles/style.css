@@ -104,6 +104,10 @@ a {
   margin: 0.5rem 9rem 0;
 }
 
+.portfolio .container {
+  margin-bottom: 5rem;
+}
+
 .box {
   margin-top: 3rem;
   display: -webkit-box;
@@ -180,7 +184,7 @@ a {
           justify-content: space-evenly;
 }
 
-.box .card .mask .description-with-btn .btn1 {
+.box .card .mask .btn1 {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 5px;
@@ -214,6 +218,41 @@ a {
 .contact img {
   height: 10rem;
   margin: 0 auto;
+  overflow: hidden;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
 }
 
 .footer {
@@ -311,7 +350,7 @@ a {
     margin: 0.5rem 19rem 0;
   }
   .box {
-    margin-top: 2rem;
+    margin: 5rem 0;
   }
   .box .card {
     width: 690px;
@@ -416,9 +455,6 @@ a {
   }
   .about .image p {
     padding-left: 5rem;
-  }
-  .portfolio {
-    height: 80vh;
   }
   .portfolio hr {
     margin: 0.5rem 40rem 0;

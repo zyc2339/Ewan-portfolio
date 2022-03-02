@@ -1,13 +1,15 @@
 import { useState } from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import Countdown from "./portfolio/countdown/countdown";
+import FadeIn from "react-fade-in";
 
 export default function Portfolio() {
   return (
-    <div className="portfolio">
+    <FadeIn className="portfolio">
       {" "}
       <h1>PROJECTS</h1>
       <hr></hr>
-      <div className="container">
+      <FadeIn className="container" delay="500" transitionDuration="4000">
         <div className="box">
           <div className="card">
             <img className="img" src="/image/intern-project.png" alt="" />
@@ -99,7 +101,33 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
+      </FadeIn>
+      <h1>other practice</h1>
+      <hr></hr>
+      <div className="container">
+        <div className="box">
+          <div className="card">
+            <Countdown />
+            <div className="mask">
+              <h3>Countdown Clock</h3>
+              <p className="technology">React JS</p>
+              <p className="description">
+                Using React Hooks create a countdown clock.
+              </p>
+              <button className="btn1">
+                <a
+                  href="https://github.com/zyc2339/react-countdown"
+                  target="_blank"
+                  title="countdown"
+                  rel="noreferrer"
+                >
+                  <FaGithub /> GITHUB{" "}
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </FadeIn>
   );
 }

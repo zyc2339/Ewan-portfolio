@@ -1,10 +1,12 @@
+import FadeIn from "react-fade-in";
+
 export default function About() {
   return (
-    <div className="about">
+    <FadeIn className="about" delay="1200" transitionDuration="3000">
       {/* <h3>Who is this guy</h3> */}
-      <div className="image">
+      <FadeIn className="image" delay="200" transitionDuration="2000">
         <img src="/image/cat-p2.png" alt="cat" />
-        <div className="image-box">
+        <FadeIn className="image-box" delay="800" transitionDuration="3000">
           <p>
             My name is Ewan Zhang I'm a full stack developer based in
             <b> Auckland</b>☀️.
@@ -14,8 +16,8 @@ export default function About() {
             I would describe myself as a developer who is passionate about
             <b> coding, animation, and of course chocolate</b>💖!
           </p>
-        </div>
-      </div>
+        </FadeIn>
+      </FadeIn>
       <p>
         In 2021 I began my journey to become a world-class developer, through
         extensive hours of learning, I gained hands-on experience. I now have a
@@ -29,6 +31,6 @@ export default function About() {
         thinking of cats. In my free time, you can find me at the gym🏋🏻‍♂️, at the
         beach🌊 or on the way to some explore nature on some bush tracks🌳.
       </p>
-    </div>
+    </FadeIn>
   );
 }
