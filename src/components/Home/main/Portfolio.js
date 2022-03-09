@@ -17,11 +17,10 @@ export default function Portfolio() {
               <h3>Internship Project</h3>
               <p className="technology">React JS/Express/MongoDB/Heroku</p>
               <p className="description">
-                This is the project I am working on now. So far we have built
-                login and sign-up system with both front-end and back-end. Other
-                components will be added soon.
+                This is the MVP project I am working on now. Currently, we
+                almost finished front-end and working on backend and database.
               </p>
-              <button className="btn">
+              {/* <button className="btn">
                 <a
                   href="https://vexplore-mvp.netlify.app/"
                   target="_blank"
@@ -30,7 +29,7 @@ export default function Portfolio() {
                 >
                   VIEW SITE
                 </a>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
