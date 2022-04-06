@@ -80,8 +80,15 @@ a {
   height: 18rem;
 }
 
+.about h1 {
+  margin: 2rem 0;
+  color: #9b9b9b;
+}
+
 .about h3 {
   font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #b3a577;
 }
 
 .about p {
